@@ -108,28 +108,31 @@ export function RoundtableLandingPage() {
         </AnimatePresence>
 
         <section id="top" className="relative flex min-h-[680px] flex-col items-center justify-center pb-20 pt-20 text-center sm:min-h-[730px] sm:pt-28">
-          <motion.div initial="hidden" animate="visible" transition={{ duration: 0.5 }} variants={reveal}>
-            <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-violet-300/20 bg-violet-400/[0.07] px-3 py-1.5 text-xs font-medium text-violet-200 backdrop-blur-sm">
-              <span className="relative flex h-1.5 w-1.5"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-300 opacity-75" /><span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-violet-300" /></span>
-              The Roundtable
-            </div>
-          </motion.div>
           <motion.h1
             initial="hidden"
             animate="visible"
             variants={reveal}
             transition={{ duration: 0.65, delay: 0.06 }}
-            className="mt-7 max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.065em] text-white sm:text-7xl lg:text-[88px]"
+            className="mt-7 text-6xl font-semibold leading-[0.9] tracking-[-0.07em] text-white sm:text-8xl lg:text-[112px]"
           >
-            Bring the question.<br />
-            <span className="bg-gradient-to-r from-[#d7ceff] via-[#b8a5ff] to-[#6bdcff] bg-clip-text text-transparent">We’ll bring the perspectives.</span>
+            The Roundtable
           </motion.h1>
           <motion.p
             initial="hidden"
             animate="visible"
             variants={reveal}
             transition={{ duration: 0.6, delay: 0.14 }}
-            className="mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg"
+            className="mt-7 max-w-4xl text-2xl font-medium leading-[1.08] tracking-[-0.045em] text-slate-200 sm:text-4xl lg:text-5xl"
+          >
+            Bring the question.<br />
+            <span className="bg-gradient-to-r from-[#d7ceff] via-[#b8a5ff] to-[#6bdcff] bg-clip-text text-transparent">We’ll bring the perspectives.</span>
+          </motion.p>
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={reveal}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-6 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg"
           >
             One question. Multiple AI experts. Better decisions.
           </motion.p>
