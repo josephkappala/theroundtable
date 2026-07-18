@@ -6,6 +6,9 @@ import { discussionStageRequestSchema } from "@/lib/validation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+// A Roundtable stage can wait on several model responses. This is within the
+// Vercel limit for non-Fluid deployments and prevents the default short timeout.
+export const maxDuration = 60;
 
 function apiError(message: string, status: number) {
   return NextResponse.json({ error: message }, { status, headers: { "Cache-Control": "no-store" } });
